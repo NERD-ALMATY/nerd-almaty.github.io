@@ -2,8 +2,8 @@ let email = document.getElementById("email");
 let submit = document.getElementById("submit");
 let xhr = new XMLHttpRequest();
 let type = 'iitu';
-let ip = '178.32.100.87';
-let port = '50243';
+let ip = 'e27ab9a6.ngrok.io';
+//let port = '50243';
 
 let send = () => {
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -24,7 +24,7 @@ let send = () => {
       }
     }
   }
-  xhr.open('POST', 'http://'+ip + ':'+port+'/icecream', true);
+  xhr.open('POST', 'https://'+ip+'/icecream', true);
   xhr.setRequestHeader("Content-type", "application/json");
   xhr.send(JSON.stringify({ 'email': email.value, 'type': type }));
 
