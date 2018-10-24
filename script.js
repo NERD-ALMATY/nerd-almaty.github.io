@@ -24,7 +24,7 @@ let send = () => {
       }
     }
   }
-  xhr.open('POST', ip + ':'+port+'/icecream', true);
+  xhr.open('POST', 'http://'+ip + ':'+port+'/icecream', true);
   xhr.setRequestHeader("Content-type", "application/json");
   xhr.send(JSON.stringify({ 'email': email.value, 'type': type }));
 
